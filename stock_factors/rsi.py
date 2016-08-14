@@ -3,6 +3,11 @@ import numpy
 
 
 def RSI(stock_prices, cycle):
+    """
+    :param stock_prices:
+    :param cycle:
+    :return: RSI
+    """
     rising_prices = [(stock_prices[i + 1] - stock_prices[i]) if (stock_prices[i + 1] - stock_prices[i]) > 0 else 0
                      for i in range(0, len(stock_prices) - 1)]
     falling_prices = [-(stock_prices[i + 1] - stock_prices[i]) if (stock_prices[i + 1] - stock_prices[i]) < 0 else 0
