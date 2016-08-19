@@ -14,14 +14,14 @@ def MACD(stock_prices, short_time=12, long_time=26, dea_time=9):
     # check inputs
     assert short_time < long_time
 
-    EMA12 = ema.EMA_from_zero(stock_prices, short_time)
-    EMA26 = ema.EMA_from_zero(stock_prices, long_time)
+    EMA12 = ema.EMA(stock_prices, short_time)
+    EMA26 = ema.EMA(stock_prices, long_time)
 
     DIF = []
     for i in range(0, len(EMA12)):
         DIF.append(EMA12[i] - EMA26[i])
 
-    DEA = ema.EMA_from_zero(DIF, dea_time)
+    DEA = ema.EMA(DIF, dea_time)
 
     macd = []
     for i in range(0, len(EMA12)):
