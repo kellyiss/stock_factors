@@ -17,6 +17,7 @@ import ata
 import co
 import mfi
 import mi
+import cci
 
-__all__ = ['hbeta', 'ma', 'rsi', 'mtm', 'ema', 'macd', 'abi', 'adr', 'advr', 'trin', 'pvi', 'stix', 'mo',
-           'asi', 'cmf', 'ata', 'co', 'mfi', 'mi']
+__all__ = ['hbeta', 'ma', 'rsi', 'mtm', 'ema', 'macd','abi','adr','advr','trin','pvi','stix','mo','msi'
+           'asi','cmf','ata','co','mfi','mi','cci']
