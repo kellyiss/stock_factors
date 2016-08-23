@@ -1,6 +1,7 @@
 # coding=utf-8
 import numpy
 
+
 def EMA(stock_prices, cycle):
     """
     :param stock_prices:

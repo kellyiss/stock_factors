@@ -1,5 +1,7 @@
-#coding=utf-8
+# coding=utf-8
 import ema
+
+
 def MO(wprice_list):
     """
     :param wprice_list:
@@ -23,8 +25,7 @@ def MO(wprice_list):
                 neg = neg + 1
         dif.append(pos - neg)
 
-
-    ema19=ema.EMA(dif,19)
-    ema39=ema.EMA(dif,39)
-    mo=ema19[len(ema19)-1]-ema39[len(ema39)-1]
+    ema19 = ema.EMA(dif, 19)
+    ema39 = ema.EMA(dif, 39)
+    mo = ema19[len(ema19) - 1] - ema39[len(ema39) - 1]
     return mo
